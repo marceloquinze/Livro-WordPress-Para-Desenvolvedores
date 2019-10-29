@@ -1,0 +1,260 @@
+/*
+Theme Name: AprendaWP
+Theme URI: http://www.exemplo.com
+Author: Seu Nome Aqui
+Author URI: http://www.exemplo.com/aprendawp
+Description: This is only a description in English
+Version: 1.0
+Tags: two-columns, left-sidebar, custom-header, custom-menu, custom-logo, blog
+Text Domain: aprendawp
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+*/
+
+.main-menu{
+    padding: 0;
+}
+.main-menu ul{  
+    padding: 0; 
+    margin: 0; 
+    font-size: 18px; 
+    font-weight: 500; 
+    border-radius: 0;    
+}
+.main-menu ul li{ 
+    display: inline;  
+    margin: 0 5px 0 0;
+}
+.main-menu ul li:last-child{ 
+    margin: 0; 
+}
+.main-menu > ul li a,
+.navbar-light .navbar-nav .nav-link{  
+    color: #303030; 
+    text-decoration: none;
+    padding: 7px 15px 20px;
+}
+.main-menu ul li a.nav-link:first-child{ 
+    padding-left: 0 !important;
+}
+.main-menu ul li ul{
+    background-color: #000;
+}
+.main-menu ul li ul li{
+    margin: 0;
+}
+.main-menu ul li ul li a{
+    padding: 0.5rem;
+    color: #fff;
+}
+.main-menu .navbar-nav .active>.nav-link{ 
+    color: #CA2424; 
+}
+.main-menu .dropdown-item:focus, 
+.main-menu .dropdown-item:hover {
+    color: #fff;
+    background-color: #272c33;
+}
+.main-menu .dropdown:hover>.dropdown-menu, 
+.main-menu .dropup:hover>.dropdown-menu  {
+  display: block;
+}
+.main-menu .dropdown-item.active, 
+.main-menu .dropdown-item:active {
+    background-color: #d2335b;
+}
+.main-menu .navbar-toggler{
+    border: none;
+    padding-right: 0;    
+}
+.main-menu .dropdown-toggle::after {
+    vertical-align: 0.155em;
+}
+.main-menu .dropdown-menu li { 
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.main-menu .dropdown-menu .dropdown-menu { 
+    top: -1px;
+    left: 100%;
+}
+@media all and (max-width: 767px) {
+
+    .main-menu{
+        border-top: 2px solid #f2f2f2;
+        padding: 10px; 
+        margin-top: 10px;       
+    }
+    .main-menu ul li{   
+        margin: 0;
+    } 
+    .main-menu .dropdown-menu{
+        display: block;
+        margin-left: 1rem;
+    }
+    .main-menu ul li .dropdown-menu .dropdown > a::before{
+        display: inline-block;
+        margin-right: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+    }
+    .main-menu ul li .dropdown-menu .dropdown > a::after{
+        display: none;
+    }
+    .main-menu .dropdown-menu .dropdown-menu{
+        margin-left: 0;
+    }
+    .main-menu .dropdown-menu .dropdown-menu a{
+        padding-left: 1rem;
+    }
+    .main-menu ul li a,
+    .navbar-light .navbar-nav .nav-link{ 
+        padding: 10px 0;
+    }
+}
+
+/* Footer - Footer Menu */
+.footer-menu ul, .footer-widgets ul{ 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 16px; 
+}
+.footer-menu ul li{ 
+    display: inline;  
+    margin: 0 10px 0 0;
+}
+.footer-menu ul li:last-child{ 
+    margin: 0; 
+}
+.footer-menu ul li a{ 
+    color: #939393; 
+    text-decoration: none;
+}
+.footer-menu ul li.current-menu-item a{ 
+    color: #ff9292; 
+}
+
+.blog .post-thumbnail {
+    margin: 1rem 0;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}

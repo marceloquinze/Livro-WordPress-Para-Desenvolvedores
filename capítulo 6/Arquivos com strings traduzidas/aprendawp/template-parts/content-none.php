@@ -1,0 +1,1 @@
+<p><?php _e( 'Nothing to display', 'aprendawp' ); ?></p>
